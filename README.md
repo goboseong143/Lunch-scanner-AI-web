@@ -365,7 +365,7 @@ AI + Backend 개발
 단순한 AI 모델 실험이 아니라 **AI API + Backend + Database + Frontend + Deployment + Security**를 하나의 서비스로 연결해본 프로젝트입니다.
 
 
-```markdown
+
 ## 🚀 실행 방법
 
 ### 1. 웹사이트로 이용
@@ -481,4 +481,3 @@ cafeteria-scanner/
 기능을 이용하면 모바일에서 앱처럼 사용할 수 있습니다.
 
 별도의 앱스토어 설치 없이 웹사이트를 앱 형태로 사용할 수 있습니다.
-```
