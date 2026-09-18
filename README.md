@@ -373,7 +373,7 @@ AI + Backend 개발
 배포된 웹사이트에 접속하면 별도의 설치 없이 바로 사용할 수 있습니다.
 
 **배포 URL:**  
-https://siu-production-a23c.up.railway.app/login
+https://siu-production-85b1.up.railway.app
 
 ---
 
