@@ -363,3 +363,122 @@ AI + Backend 개발
 ```
 
 단순한 AI 모델 실험이 아니라 **AI API + Backend + Database + Frontend + Deployment + Security**를 하나의 서비스로 연결해본 프로젝트입니다.
+
+
+```markdown
+## 🚀 실행 방법
+
+### 1. 웹사이트로 이용
+
+배포된 웹사이트에 접속하면 별도의 설치 없이 바로 사용할 수 있습니다.
+
+**배포 URL:**  
+https://siu-production-a23c.up.railway.app/login
+
+---
+
+### 2. GitHub에서 다운로드하여 직접 실행
+
+GitHub Repository에서 프로젝트를 다운로드하여 로컬 환경에서 직접 실행할 수 있습니다.
+
+#### ① 프로젝트 다운로드
+
+GitHub Repository에서
+
+**Code → Download ZIP**
+
+을 클릭하여 프로젝트를 다운로드합니다.
+
+압축을 해제한 후 프로젝트 폴더로 이동합니다.
+
+#### ② Python 환경 확인
+
+Python 3.9.6 환경을 권장합니다.
+
+```bash
+python --version
+```
+
+#### ③ 필요한 라이브러리 설치
+
+프로젝트 폴더에서 다음 명령어를 실행합니다.
+
+```bash
+pip install -r requirements.txt
+```
+
+#### ④ Gemini API Key 설정
+
+이 프로젝트는 Google Gemini API를 사용하므로 실행 전에 API Key를 환경변수로 설정해야 합니다.
+
+**macOS / Linux**
+
+```bash
+export GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+export SECRET_KEY="YOUR_SECRET_KEY"
+```
+
+**Windows PowerShell**
+
+```powershell
+$env:GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+$env:SECRET_KEY="YOUR_SECRET_KEY"
+```
+
+> ⚠️ 실제 Gemini API Key를 GitHub에 업로드하지 마세요.
+> 
+> API Key는 반드시 환경변수로 관리하는 것을 권장합니다.
+
+#### ⑤ 서버 실행
+
+```bash
+python app.py
+```
+
+정상적으로 실행되면 브라우저에서 다음 주소로 접속합니다.
+
+```text
+http://127.0.0.1:8080
+```
+
+로그인 페이지:
+
+```text
+http://127.0.0.1:8080/login
+```
+
+---
+
+### 3. 프로젝트 폴더 구조
+
+```text
+cafeteria-scanner/
+├── app.py
+├── requirements.txt
+├── Procfile
+├── .gitignore
+├── templates/
+│   ├── index.html
+│   ├── login.html
+│   └── ranking.html
+└── static/
+    ├── icon-192.png
+    ├── icon-512.png
+    ├── manifest.json
+    └── service-worker.js
+```
+
+---
+
+### 📱 PWA 설치
+
+이 프로젝트는 PWA(Progressive Web App)를 지원합니다.
+
+웹사이트에 접속한 후 브라우저에서 제공하는
+
+**홈 화면에 추가 / 앱 설치**
+
+기능을 이용하면 모바일에서 앱처럼 사용할 수 있습니다.
+
+별도의 앱스토어 설치 없이 웹사이트를 앱 형태로 사용할 수 있습니다.
+```
